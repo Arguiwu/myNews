@@ -1,0 +1,21 @@
+{
+	"expo": {
+		"name": "新视界",
+		"icon": "./src/assets/logo.png",
+		"slug": "arguiwu-news",
+		"privacy": "public",
+		"version": "1.0.0",
+		"sdkVersion": "25.0.0",
+		"splash": {
+			"image": "./src/assets/logo.png",
+			"resizeMode": "cover",
+			"backgroundColor": "#FEF9B0"
+		},
+		"ios": {
+      		"bundleIdentifier": "com.arguiwu.arguiwu"
+    	},
+		"android": {
+			"package": "com.arguiwu.arguiwu"
+		}
+	}
+}
