@@ -8,10 +8,12 @@ import {
 	Image,
 	FlatList,
 } from 'react-native'
-import Placeholder from 'rn-placeholder'
-import config from '../../utils'
 
+import Placeholder from 'rn-placeholder'
 import { Picker, NoticeBar } from 'antd-mobile'
+
+import config from '../../utils'
+import MyStatusBar from '../../components/MyStatusBar'
 
 const CITY_URL = 'https://api.douban.com/v2/loc/list?count=48'
 const MOVIE_URL = 'https://api.douban.com/v2/movie/in_theaters'
@@ -80,7 +82,7 @@ export default class Movie extends React.Component {
 	render() {
 		return (
 			<View style={styles.container}>
-				<StatusBar barStyle="default" />
+				<MyStatusBar backgroundColor="#34495e" barStyle="light-content" />
 				<View style={styles.headContainer}>
 					<Text style={styles.headText} onPress={() => this.setState({cityVisible: true})}>{this.state.cityLabel}</Text>
 					<Text style={styles.headText}>正在上映</Text>
@@ -131,7 +133,6 @@ export default class Movie extends React.Component {
 const styles = StyleSheet.create({
 	container: {
 		flex: 1,
-		paddingTop: config.helper.isIOS ? 20 : config.helper.statusBarHeight,
 		backgroundColor: '#fff',
 	},
 	headContainer: {

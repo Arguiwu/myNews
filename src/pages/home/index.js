@@ -8,10 +8,14 @@ import {
 	Image,
 	FlatList,
 } from 'react-native'
+
 import { Drawer } from 'antd-mobile'
 import Placeholder from 'rn-placeholder'
-import config from '../../utils'
+
 import { Foundation, MaterialCommunityIcons } from '@expo/vector-icons'
+
+import config from '../../utils'
+import MyStatusBar from '../../components/MyStatusBar'
 
 const CNODEJS_ARTICLES = 'https://cnodejs.org/api/v1/topics'
 
@@ -50,7 +54,7 @@ export default class Home extends React.Component {
 	render() {
 		return (
 			<View style={styles.container}>
-				<StatusBar barStyle="dark-content" />
+				<MyStatusBar backgroundColor="#34495e" barStyle="light-content" />
 				<View style={styles.headContainer}>
 					<View>
 						<Foundation name="list" color="#fff" size={24} onPress={() => this.setState({open: !this.state.open})} />
@@ -154,7 +158,6 @@ export default class Home extends React.Component {
 const styles = StyleSheet.create({
 	container: {
 		flex: 1,
-		paddingTop: config.helper.isIOS ? 20 : config.helper.statusBarHeight,
 		backgroundColor: '#fff',
 	},
 	headContainer: {

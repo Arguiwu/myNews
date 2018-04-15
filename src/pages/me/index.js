@@ -11,6 +11,7 @@ import {
 import { FontAwesome, MaterialIcons } from '@expo/vector-icons'
 
 import config from '../../utils'
+import MyStatusBar from '../../components/MyStatusBar'
 
 const ABOUT_ME = 'aboutme'
 const CONTACT_ME = 'contactme'
@@ -31,7 +32,7 @@ export default class Me extends React.Component {
 	render() {
 		return (
 			<View style={styles.container}>
-				<StatusBar barStyle="default" />
+				<MyStatusBar backgroundColor="#34495e" barStyle="light-content" />
 				<TouchableOpacity activeOpacity={.5} style={[styles.meItem, this.state.showWhat === ABOUT_ME && styles.checkActive]} onPress={() => this._itemChange(ABOUT_ME)}>
 					{
 						this.state.showWhat === ABOUT_ME ?
@@ -99,7 +100,6 @@ export default class Me extends React.Component {
 const styles = StyleSheet.create({
 	container: {
 		flex: 1,
-		paddingTop: config.helper.isIOS ? 20 : config.helper.statusBarHeight,
 		backgroundColor: '#fff',
 	},
 	meItem: {
