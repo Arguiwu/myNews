@@ -66,7 +66,7 @@ export default class Home extends React.Component {
 				</View>
 				<Drawer
 					sidebar={this._sidebar()}
-					drawerWidth={config.helper.scaleSize(400)}
+					drawerWidth={200}
 					drawerBackgroundColor={'#fff'}
 					open={this.state.open}
 				>
@@ -161,9 +161,9 @@ const styles = StyleSheet.create({
 		backgroundColor: '#fff',
 	},
 	headContainer: {
-		height: config.helper.scaleSize(88),
-		paddingLeft: config.helper.scaleSize(30),
-		paddingRight: config.helper.scaleSize(30),
+		height: 44,
+		paddingLeft: 15,
+		paddingRight: 15,
 		flexDirection: 'row',
 		backgroundColor: '#34495e',
 		alignItems: 'center',
@@ -172,14 +172,14 @@ const styles = StyleSheet.create({
 		borderBottomColor: '#ecf0f1'
 	},
 	articleRange: {
-		fontSize: config.helper.scaleSize(32),
+		fontSize: 16,
 		color: '#fff'
 	},
 	articleContainer: {
-		paddingLeft: config.helper.scaleSize(30),
-		paddingRight: config.helper.scaleSize(30),
-		paddingTop: config.helper.scaleSize(20),
-		paddingBottom: config.helper.scaleSize(20),
+		paddingLeft: 15,
+		paddingRight: 15,
+		paddingTop: 10,
+		paddingBottom: 10,
 		borderBottomColor: '#d5dbdb',
 		borderBottomWidth: 1 / config.helper.pixelRatio,
 	},
@@ -188,30 +188,30 @@ const styles = StyleSheet.create({
 		alignItems: 'center',
 	},
 	articleType: {
-		paddingLeft: config.helper.scaleSize(12),
-		paddingRight: config.helper.scaleSize(12),
-		paddingTop: config.helper.scaleSize(10),
-		paddingBottom: config.helper.scaleSize(10),
-		marginRight: config.helper.scaleSize(20),
-		borderRadius: config.helper.scaleSize(8),
+		paddingLeft: 6,
+		paddingRight: 6,
+		paddingTop: 5,
+		paddingBottom: 5,
+		marginRight: 10,
+		borderRadius: 4,
 		backgroundColor: '#e7e7e7',
 		color: '#fff'
 	},
 	articleTitleText: {
-		fontSize: config.helper.scaleSize(32),
+		fontSize: 16,
 		fontWeight: 'bold',
 		color: '#2c3e50'
 	},
 	articleContent: {
-		paddingTop: config.helper.scaleSize(20),
+		paddingTop: 10,
 		flexDirection: 'row',
 		alignItems: 'center',
 	},
 	articleAuthorImg: {
-		width: config.helper.scaleSize(80),
-		height: config.helper.scaleSize(80),
-		borderRadius: config.helper.scaleSize(40),
-		marginRight: config.helper.scaleSize(20),
+		width: 40,
+		height: 40,
+		borderRadius: 20,
+		marginRight: 10,
 		borderWidth: 1 / config.helper.pixelRatio,
 		borderColor: '#ccc',
 	},
@@ -221,8 +221,8 @@ const styles = StyleSheet.create({
 	articleItem: {
 		flexDirection: 'row',
 		alignItems: 'center',
-		paddingTop: config.helper.scaleSize(4),
-		paddingBottom: config.helper.scaleSize(4),
+		paddingTop: 2,
+		paddingBottom: 2,
 	},
 	articleAuthorName: {
 		flex: 1,
@@ -231,7 +231,7 @@ const styles = StyleSheet.create({
 		color: '#42b983',
 	},
 	articleTime: {
-		fontSize: config.helper.scaleSize(24),
+		fontSize: 12,
 	},
 	share: {
 		backgroundColor: '#1abc9c'
@@ -245,22 +245,19 @@ const styles = StyleSheet.create({
 	top: {
 		backgroundColor: '#e74c3c'
 	},
-	sideBar: {
-
-	},
 	userInfo: {
 		flexDirection: 'row',
 		alignItems: 'center',
-		marginLeft: config.helper.scaleSize(30),
-		marginRight: config.helper.scaleSize(30),
-		paddingTop: config.helper.scaleSize(30),
-		paddingBottom: config.helper.scaleSize(30),
+		marginLeft: 15,
+		marginRight: 15,
+		paddingTop: 15,
+		paddingBottom: 15,
 		borderBottomColor: '#d4d4d4',
 		borderBottomWidth: 1 / config.helper.pixelRatio,
 	},
 	loginText: {
-		marginLeft: config.helper.scaleSize(30),
-		fontSize: config.helper.scaleSize(30),
+		marginLeft: 15,
+		fontSize: 15,
 		color: '#313131'
 	}
 })

@@ -104,10 +104,10 @@ const styles = StyleSheet.create({
 	},
 	meItem: {
 		flexDirection: 'row',
-		paddingTop: config.helper.scaleSize(30),
-		paddingLeft: config.helper.scaleSize(30),
-		paddingRight: config.helper.scaleSize(30),
-		paddingBottom: config.helper.scaleSize(30),
+		paddingTop: 15,
+		paddingLeft: 15,
+		paddingRight: 15,
+		paddingBottom: 15,
 		alignItems: 'center',
 		backgroundColor: '#B7AFA3',
 	},
@@ -118,7 +118,7 @@ const styles = StyleSheet.create({
 	},
 	meItemTitle: {
 		marginLeft: 5,
-		fontSize: config.helper.scaleSize(36),
+		fontSize: 18,
 		color: '#374046'
 	},
 	meItemTitleActive: {
@@ -126,29 +126,29 @@ const styles = StyleSheet.create({
 	},
 	aboutMe: {
 		flexDirection: 'column',
-		paddingTop: config.helper.scaleSize(30),
-		paddingLeft: config.helper.scaleSize(30),
-		paddingRight: config.helper.scaleSize(30),
-		paddingBottom: config.helper.scaleSize(30),
+		paddingTop: 15,
+		paddingLeft: 15,
+		paddingRight: 15,
+		paddingBottom: 15,
 		alignItems: 'center',
 	},
 	myName: {
-		marginTop: config.helper.scaleSize(30),
+		marginTop: 15,
 		fontWeight: '700',
-		fontSize: config.helper.scaleSize(36),
+		fontSize: 18,
 		color: '#374046'
 	},
 	myDesc: {
-		marginTop: config.helper.scaleSize(20),
+		marginTop: 10,
 		fontWeight: '300',
-		fontSize: config.helper.scaleSize(32),
+		fontSize: 16,
 		color: '#374046'
 	},
 	photo: {
-		width: config.helper.scaleSize(190),
-		height: config.helper.scaleSize(190),
-		borderRadius: config.helper.scaleSize(95),
-		borderWidth: config.helper.scaleSize(8),
+		width: 90,
+		height: 90,
+		borderRadius: 45,
+		borderWidth: 4,
 		borderColor: '#fff',
 	},
 	contactMe: {
@@ -156,10 +156,10 @@ const styles = StyleSheet.create({
 	},
 	contactItem: {
 		flexDirection: 'row',
-		paddingTop: config.helper.scaleSize(20),
-		paddingLeft: config.helper.scaleSize(30),
-		paddingRight: config.helper.scaleSize(30),
-		paddingBottom: config.helper.scaleSize(20),
+		paddingTop: 10,
+		paddingLeft: 15,
+		paddingRight: 15,
+		paddingBottom: 10,
 		alignItems: 'center',
 		borderBottomWidth: 1 / config.helper.pixelRatio,
 		borderBottomColor: 'rgba(0,0,0,.1)',
@@ -168,11 +168,11 @@ const styles = StyleSheet.create({
 		flex: 1,
 	},
 	contactItemIcon: {
-		width: config.helper.scaleSize(80),
-		height: config.helper.scaleSize(44),
+		width: 40,
+		height: 22,
 		alignItems: 'center',
 		justifyContent: 'center',
 		backgroundColor: '#665e51',
-		borderRadius: config.helper.scaleSize(30)
+		borderRadius: 15
 	}
 })

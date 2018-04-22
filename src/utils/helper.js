@@ -70,13 +70,6 @@ const fontScale = PixelRatio.getFontScale()
 // 当前设备像素密度
 const pixelRatio = PixelRatio.get()
 
-const guidelineBaseWidth = 750
-const guidelineBaseHeight = 1334
-
-const scaleSize = size => width / guidelineBaseWidth * size
-const verticalScale = size => height / guidelineBaseHeight * size
-const moderateScale = (size, factor = 0.5) => size + ( scale(size) - size ) * factor
-
 export default {
 	getItem,
 	setItem,
@@ -88,7 +81,4 @@ export default {
 	pixelRatio: pixelRatio,
 	statusBarHeight: statusBarHeight,
 	contentHeight: height - statusBarHeight,
-	scaleSize,
-	verticalScale,
-	moderateScale,
 }

@@ -136,35 +136,35 @@ const styles = StyleSheet.create({
 		backgroundColor: '#fff',
 	},
 	headContainer: {
-		height: config.helper.scaleSize(92),
+		height: 46,
 		flexDirection: 'row',
 		backgroundColor: '#34495e',
 		alignItems: 'center',
 		justifyContent: 'center',
 	},
 	headText: {
-		marginRight: config.helper.scaleSize(20),
-		fontSize: config.helper.scaleSize(36),
+		marginRight: 10,
+		fontSize: 18,
 		color: '#fff',
 	},
 	movieItem: {
 		flexDirection: 'row',
 		marginTop: 1 / config.helper.pixelRatio,
-		paddingTop: config.helper.scaleSize(32),
-		paddingBottom: config.helper.scaleSize(32),
-		paddingRight: config.helper.scaleSize(32),
+		paddingTop: 16,
+		paddingBottom: 16,
+		paddingRight: 16,
 		backgroundColor: '#ecf0f1',
 		borderBottomWidth: 1 / config.helper.pixelRatio,
 		borderBottomColor: '#bdc3c7'
 	},
 	movieImg: {
-		width: config.helper.scaleSize(216),
-		height: config.helper.scaleSize(320),
-		marginRight: config.helper.scaleSize(50),
-		marginLeft: config.helper.scaleSize(64),
+		width: 108,
+		height: 160,
+		marginRight: 20,
+		marginLeft: 15,
 	},
 	moveDesc: {
-		marginBottom: config.helper.scaleSize(10),
+		marginBottom: 5,
 	},
 	moveRate: {
 		color: 'red'
