@@ -14,6 +14,7 @@ import { Ionicons, FontAwesome } from '@expo/vector-icons'
 import Home from './pages/home'
 import Movie from './pages/movie'
 import Me from './pages/me'
+import Welcome from './pages/Welcome'
 
 const MainTab = TabNavigator(
 	{
@@ -85,7 +86,8 @@ const MainTab = TabNavigator(
 )
 
 const AppNavigator = StackNavigator({
-	MainTab: { screen: MainTab }
+	Welcome: { screen: Welcome },
+	MainTab: { screen: MainTab },
 }, {
 	headerMode: 'none',
 })
